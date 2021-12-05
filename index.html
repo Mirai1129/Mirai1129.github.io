@@ -1,10 +1,15 @@
 <html>
 
 <head>
-    <link href="img/favicon.ico" rel="shortcut icon" />
     <title>
         Discord及時偵測系統
     </title>
+    <link href="main.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="img/favicon.ico" rel="shortcut icon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Discord及時偵測系統">
     <meta property="og:title" content="Discord及時偵測系統">
@@ -14,17 +19,17 @@
 </head>
 
 <body bgcolor="#36393F">
-    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+    <!--widget icon-->
+    <script class="discord_widget" src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
         new Crate({
             server: '916696271715172383', // りしれ供さ小
             channel: '916698984574230588' // #社群更新
         })
     </script>
-    })
-    </script>
-    <iframe src="https://discord.com/widget?id=916696271715172383&theme=dark" width="350" height="500"
-        allowtransparency="true" frameborder="0"
-        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+    <!--discord 原生widget-->
+    <iframe class="discord" src="https://discord.com/widget?id=916696271715172383&theme=dark" allowtransparency="true"
+        frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 </body>
 
